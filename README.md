@@ -14,14 +14,14 @@ console.log(string.toBoolean('true'));
 ```
 
 ### array functions:
-- useFilter(arrayOfObject, filterKeys, allFilterKeys = [] ) :
+1. useFilter(arrayOfObject, filterKeys, allFilterKeys = [] ) :
 This function will filter your array of objects and return a new one.
  - arrayOfObject: your array to filter.
  - filterKeys: your object of filters. ex: { search: 'plop', id: [5, 8, 9]}. The keyword "search" will look for string within the allFilterKeys param if given or your entire array.
 
  - allFilterKeys: optional. if given, will only filter within given range.
 
-- useSort(array, key, order):
+2. useSort(array, key, order):
 The function will sort your array according to your desire.
  - array: your array of objects.
  - key: the key given will order the results.
