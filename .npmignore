@@ -1,7 +1,6 @@
 .git
+src
 node_modules
-dist
 rollup.config.js
 tests
 .babelrc
-.npmignore

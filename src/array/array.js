@@ -1,5 +1,5 @@
 module.exports = {
-	useFilter: (array = [], filters, allKeySearch = []) {
+	useFilter: (array = [], filters, allKeySearch = []) => {
 	  if (datas.length === 0) return [];
 	  let dataCopy = datas;
 	  let filterKeys = {};
@@ -51,12 +51,12 @@ module.exports = {
 		} while (array.length)
 		return arrays
 	},
-	useSort: (array = [], colKey, desc) {
+	useSort: (array = [], colKey, desc) => {
 	  const dataSorted = sortDatas(collection, colKey, desc);
 	  return dataSorted;
-	}
+  },
 
-	function sortDatas(collection, value, desc) {
+	sortDatas: (collection, value, desc) => {
 	  return collection.sort((objA, objB) => {
 		let a = '';
 		let b = '';
@@ -74,10 +74,8 @@ module.exports = {
 		}
 
 		if (desc === 'asc') {
-		  // eslint-disable-next-line no-nested-ternary
 		  return a > b ? 1 : b > a ? -1 : 0;
 		}
-		// eslint-disable-next-line no-nested-ternary
 		return a > b ? -1 : b > a ? 1 : 0;
 	  });
 	}
