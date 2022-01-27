@@ -13,7 +13,7 @@ console.log(string.toBoolean('true'));
 
 ```
 
-### array functions:
+## array functions:
 1. useFilter(arrayOfObject, filterKeys, allFilterKeys = [] ) :
 This function will filter your array of objects and return a new one.
  - arrayOfObject: your array to filter.
@@ -27,3 +27,16 @@ The function will sort your array according to your desire.
  - key: the key given will order the results.
  ex: useSort( [{id: 2, name: "second"}, {id: 1, name: "first"}], "id", "desc") =>  [{id: 1, name: "first"}, {id: 2, name: "second"}]
  - order: only accepts "desc" or "asc".
+
+ ## string functions:
+1. capitalize(string)
+2. getByteLength(string)
+3. isJson(string)
+4. isEmail(string)
+5. removeAccents(string)
+6. removeSpecialChar(string)
+7. replaceWhiteSpaces(string, replacement)
+8. toBoolean(string)
+
+## dom functions:
+1. getPosRelativeTo(refFrom, refToRect)

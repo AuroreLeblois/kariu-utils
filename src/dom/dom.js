@@ -21,23 +21,5 @@ module.exports = {
 			result.top = top
 		}
 		return result
-	},
-
-	hasScrollY: (ref) => {
-		if (!ref) return false
-		return (ref.scrollHeight > ref.height)
-	},
-
-	hasScrollX: (ref) => {
-		if (!ref) return false
-		return (ref.scrollWidth > ref.width)
-	},
-
-	scrollToLast: (ref, limit = 0) => {
-		if (!ref) return
-		const scrollBottom = (ref.scrollHeight - (Math.round(ref.scrollTop) + ref.offsetHeight))
-		if (limit && (scrollBottom >= limit)) return
-
-		if (ref.lastElementChild) ref.scrollTo(0, ref.lastElementChild.offsetTop)
 	}
 }

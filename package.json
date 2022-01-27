@@ -1,31 +1,36 @@
 {
-	"name": "kariu-utils",
-	"description": "Javascript funtions",
-	"version": "0.0.1",
-	"author": "lebloisaurore",
-	"copyright": "Copyright © year ${author}",
-	"main": "dist/js/bundle.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com:AuroreLeblois/kariu-utils.git"
-	},
-	"license": "MIT",
-	"scripts": {
-		"start": "node ./tests/index.js -debug",
-		"build": "rollup -c"
-	},
-	"dependencies": {
-		"form-data": "^4.0.0"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.13.14",
-		"@babel/plugin-proposal-class-properties": "^7.13.0",
-		"@babel/plugin-transform-runtime": "^7.13.10",
-		"@rollup/plugin-babel": "^5.3.0",
-		"@rollup/plugin-commonjs": "^18.0.0",
-		"@rollup/plugin-json": "^4.1.0",
-		"@rollup/plugin-node-resolve": "^11.2.1",
-		"rollup": "^2.44.0",
-		"rollup-plugin-peer-deps-external": "^2.2.4"
-	}
+  "name": "@kariu/kariu-utils",
+  "description": "Javascript funtions",
+  "version": "0.0.2",
+  "author": "lebloisaurore",
+  "copyright": "Copyright © year ${author}",
+  "main": "dist/js/bundle.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AuroreLeblois/kariu-utils.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./tests/index.js -debug",
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "rollup": "^2.44.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4"
+  },
+  "bugs": {
+    "url": "https://github.com/AuroreLeblois/kariu-utils/issues"
+  },
+  "homepage": "https://github.com/AuroreLeblois/kariu-utils#readme",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {}
 }
