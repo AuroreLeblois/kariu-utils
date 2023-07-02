@@ -1,7 +1,7 @@
 {
   "name": "kariu-utils",
   "description": "Javascript funtions",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "lebloisaurore",
   "copyright": "Copyright © year ${author}",
   "main": "dist/js/bundle.js",
